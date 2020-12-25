@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>week1 day3</title>
+	<link rel="stylesheet" href="hi.css">
+<script>
+ $(document).ready(function(){
+
+  $("#Hero").hover(function(){
+    $(this).css("background-color", "yellowgreen");;
+    $("#Sidebar").css("background-color", "#EC80FF");;
+  },
+  function(){
+    $(this).css("background-color", "#EC80FF");;
+    $("#Sidebar").css("background-color", "yellowgreen");;
+  });
+ 
+  $("#Sidebar").hover(function(){
+  $(this).css("background-color", "#EC80FF");;
+  $("#Hero").css("background-color", "yellowgreen");;
+  },
+  function(){
+  $(this).css("background-color", "yellowgreen");;
+  $("#Hero").css("background-color", "#EC80FF");;
+  }); 
+
+  $("#Header").click(function(){
+   $("#text").text("This is main paragraph.");
+  });
+ 
+  $("#RelatedImages").click(function(){
+    $("#link").html('<a href="https://travel.mqcdn.com/mapquest/travel/wp-content/uploads/2020/06/GettyImages-1211212607-853x480.jpg" target="_blank">Click to see images</a>');
+  });
+
+});
+</script>
+</head>
+<body>
+<h1 id="test"> Week1 Day3 : Software Exploration </h1>
+<h2> Objective:To create the specified image using flexbox. </h2>
+<hr>
+		  <div class="container">
+            <div id="Header" class="container-1">
+                  Header
+            </div>
+            <div class="container-2">
+                  <div class="subcontainer1">
+                      <div id="Hero" class="block" style="font-size:15px; text-align:center; margin:2px 2px 2px 0; flex:0.5; background-color: #EC80FF; padding:40px;">
+                            Hero
+                      </div>
+                      <div  id="Sidebar" class="block" style="font-size:15px; text-align:center; margin:2px 2px 2px 0; flex:3;background-color:yellowgreen; padding:40px;">
+                            Sidebar
+                      </div>
+                  </div>
+                  <div class="subcontainer2">
+                      <div id="MainContent" class="block" style="background-color:#FCBE11; font-size:15px; margin:2px 0 2px 2px;
+                      flex:4; padding:40px; text-align:center;">
+                             Main Content
+                             <p id="text"></p>
+                      </div>
+                      <div class="block" style="background-color: #696969; font-size:15px; margin:2px 0 2px 2px;
+                      flex:1; padding:40px; text-align:center;">
+                            Extra Content
+                      </div>
+                  </div>
+            </div>
+            <div class="container-3">
+                <div id="RelatedImages" class="block" style="background-color:#03C04A ; font-size:15px;
+                margin:2px 0 2px 2px; flex:3; padding:40px; text-align:center;">
+                    Related Images
+                    <p id="link"></p>
+                </div>
+                <div class="block" style="background-color:lightpink; font-size:15px; margin:2px 0 2px 2px; flex:1;
+                padding:40px; text-align:center; ">
+                   Realated Posts
+                </div>
+            </div>
+            <div class="container-4">
+                Footer
+            </div>
+        </div>
+</body>
+</html>

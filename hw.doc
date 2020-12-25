@@ -1,0 +1,51 @@
+SELECT lastName,firstname,jobtitle FROM employees;
+
+SELECT contactLAstNAme,ContactFirstName 
+FROM customers ORDER BY contactLAstNAme;
+
+SELECT lastname, firstname, jobtitle
+FROM employees 
+WHERE jobtitle="Sales Rep";
+
+SELECT lastname, firstname, jobtitle, officeCode
+FROM employees 
+WHERE officeCode=1;
+
+SELECT lastname, firstname, jobtitle, officeCode
+FROM employees 
+ORDER BY officeCode;
+
+SELECT DISTINCT state 
+FROM customers;
+
+SELECT lastname
+FROM employees
+ORDER BY lastname;
+
+SELECT DISTINCT city ,state
+FROM customers
+WHERE state IS NOT NULL
+ORDER BY state;
+
+SELECT orders.customerNumber, customers.customerName, orders.orderNumber, orders.status
+FROM customers LEFT JOIN orders  ON orders.customerNumber=customers.customerNumber
+WHERE customers.customerNumber > 161 AND orders.customerNumber IS NOT NULL
+ORDER BY customers.customerNumber;
+
+SELECT customers.salesRepEmployeeNumber AS customerNumber, employees.employeeNumber
+FROM customers,employees;
+
+SELECT orders.orderNumber,SUM(orderdetails.priceEach) AS total 
+FROM orders,orderdetails
+WHERE orders.orderNumber=orderdetails.orderNumber
+GROUP BY orders.orderNumber
+ORDER BY orders.orderNumber;
+
+SELECT status,COUNT(status)
+FROM orders
+GROUP BY status
+ORDER BY status;
+
+ 
+
+

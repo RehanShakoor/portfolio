@@ -1,0 +1,66 @@
+#MyPhoto
+{
+ margin-top: 50px;
+ margin-left: 40%;
+ margin-bottom: 0px;
+ height:250px;
+ width:175px;
+ border-radius: 100px;
+}
+.container{
+ display: flex;
+ flex-direction: column;
+ background-color : DarkGoldenRod;
+ font-size : 30px;
+ padding : 20px;
+ text-align : left;
+ margin:30px 2px 2px 0px;
+}
+#Reason{
+ background-color : white;
+ margin:20px 2px 2px 0px;
+}
+#Intro{
+ background-color : white;
+ margin:2px 2px 2px 0px;
+}
+#Accounts{
+ background-color : white;
+ margin:20px 2px 2px 0px;
+}
+#Education{
+ background-color :white;
+ margin:20px 2px 2px 0px;
+}
+#link1
+{
+ font-size : 20px;
+}
+#link2
+{
+ font-size : 20px;
+}
+table, td, th 
+{
+ border: 1px solid Black;
+ color:black;
+ font-size : 25px;
+}
+table 
+{
+ margin-top : 12px;
+ width: 100%;
+}
+#explogo{
+    height :40px;
+    width: 150px;
+   }
+.space{
+       color : rgb(0, 0, 0);
+       margin-left : 20%; 
+       text-decoration: none;
+}
+body 
+{
+ background-color: #FFF8F7;
+}

@@ -1,0 +1,16 @@
+.space{
+    color : rgb(0, 0, 0);
+    margin-left : 20%; 
+    text-decoration: none;
+}
+body 
+{
+ background-color: #FFF8F7;
+}
+#explogo{
+ height :40px;
+ width: 150px;
+}
+.contacts{
+ font-size: 50px;margin-left: 50px;
+}

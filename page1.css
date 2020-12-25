@@ -1,0 +1,86 @@
+body 
+{
+ background-color: #FFF8F7;
+}
+h2
+{
+ color: Gold;
+}
+p
+{
+ color: White;
+}
+#MyPhoto
+{
+ margin-top: 25px;
+ margin-left: 40%;
+ height:250px;
+ width:175px;
+ border-radius: 100px;
+}
+#fblogo
+{
+ height:30px;
+ width:30px;
+}
+#lilogo
+{
+ height:30px;
+ width:30px;
+ margin-left: 2%
+}
+table, td, th 
+{
+ border: 1px solid White;
+ color: White;
+}
+
+table 
+{
+ width: 100%;
+ border-collapse: collapse;
+}
+#name{
+ font-weight: 300;   
+ font-family: 'Roboto';
+ margin-top : 2%;    
+ margin-left : 40%;
+
+}
+#sde{
+ font-weight: 300;  
+ font-family: 'Roboto';   
+ word-spacing: 10px;
+ margin-top : 3%;
+ margin-left : 25%;
+ margin-bottom: 4%;
+ color :rgb(0, 0, 0)
+}
+
+.space{
+ color : rgb(0, 0, 0);
+ margin-left : 20%; 
+ font-size :large;
+ text-decoration: none;
+}
+#lilogo
+{
+ height:30px;
+ width:30px;
+ margin-left: 2%
+}
+#fblogo
+{
+ height:30px;
+ width:30px;
+}
+#logo1{   
+ margin-left : 40%;
+}
+#logo2{   
+ margin-left : 7%;
+}   
+#explogo{
+    height :40px;
+    width: 150px;
+}

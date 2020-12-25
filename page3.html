@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <link rel="stylesheet" href="page3.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script>
+ $(document).ready(function(){
+ $("#Intro").hover(function(){
+ $("#IntroText").show();   
+ $("#IntroText").text("I am Rehan Shakoor. I am pursuing B.Tech in Engineering Physics (2nd year) at IIT Roorkee . I am exploring software development.");
+ $("#IntroText").css("background-color","white");
+ $("#IntroText").css({"font-size":"20px","padding":"20px"});
+ },
+ function(){
+    $("#IntroText").hide();
+ }); 
+
+ $("#Reason").hover(function(){
+ $("#ReasonText").show();    
+ $("#ReasonText").text("I want to know whether software development is for me or not.");
+ $("#ReasonText").css("background-color","white");
+ $("#ReasonText").css({"font-size":"20px","padding":"20px"});
+ 
+},
+ function(){
+ $("#ReasonText").hide();
+ });
+
+ 
+ $("#Accounts").hover(function(){
+ $("#link1").show();  
+ $("#link2").show();     
+ $("#link1").html('<a href="https://www.facebook.com/rehan.shakoor.5688" target="_blank">Facebook</a>') 
+ $("#link2").html('<a href="https://www.linkedin.com/in/rehan-shakoor-1311941a0" target="_blank">LinkedIn</a>')  
+ },
+ function(){
+ $("#link1").hide();  
+ $("#link2").hide();
+ });
+
+ $("#Education").hover(function(){
+  var row1='<tr><td>Class</td><td>Board/University Name</td><td>Marks/CGPA</td></tr>';
+  var row2='<tr><td>X</td><td>CBSE</td><td>10 CGPA</td></tr>';
+  var row3='<tr><td>XII</td><td>CBSE</td><td>90%</td></tr>';
+  var row4='<tr><td>B.Tech</td><td>IIT Roorkee</td><td>9 CGPA</td></tr>';
+  $("table").append(row1,row2,row3,row4);
+ },
+ function(){
+  $("table").empty();
+ });
+ 
+ });
+ </script>
+</head>
+
+
+
+<body>
+   <p style="margin-bottom : 40px; background-color: white;"><img id="explogo" src="explogo.jpg" alt="explogo.png">
+      <a class="space" style="margin-left:65%;" href="page3.html">ABOUT</a>
+      <a class="space" style="margin-left:4% ;" href="page2.html">PROJECTS</a>
+      <a class="space" style="margin-left:4% ;" href="page4.html" >CONTACTS</a>
+  </p>
+ <img id="MyPhoto" src="profilepic.jpeg"> 
+ <p style="margin-left:42%; margin-top:20px ;font-size: 47px;margin-bottom: 10px;">About</p>
+ <div class="container">
+  <div id="Intro">
+  <h>Introduction</h>
+  <p id="IntroText"></p>
+  </div>
+  <div id="Reason">
+  <h>Reason to explore software</h> 
+  <p id="ReasonText"></p>
+  </div>
+  <div id="Accounts">
+  <h>Online Professional Account</h>
+  <pre id="link1"></pre>
+  <pre id="link2"></pre>
+  </div>
+  <div id="Education">
+  <h>Education</h>
+  <table></table>
+  </div>
+ </div>
+
+</body>
+
+
+</html>
